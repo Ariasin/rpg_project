@@ -6,16 +6,16 @@ unsigned int* prepareWindowSpace(const unsigned int windowWidth, const unsigned 
     unsigned int windowTiles[2] = {0,0}, x = windowWidth, y = windowHeight;
     
     while (windowTiles[0] == 0) {
-        if (x % 24 == 0) {
-            windowTiles[0] = x / 24;
+        if (x % FONT_SIZE == 0) {
+            windowTiles[0] = x / FONT_SIZE;
         } else {
             x -= 1;
         }
     }
       
     while (windowTiles[1] == 0) {
-        if (y % 24 == 0) {
-            windowTiles[1] = y / 24;
+        if (y % FONT_SIZE == 0) {
+            windowTiles[1] = y / FONT_SIZE;
         } else {
             y -= 1;
         }
@@ -28,18 +28,18 @@ unsigned int* prepareWindowSpace(const unsigned int windowWidth, const unsigned 
     return returnDisplay;
     }
 
-unsigned int* makeWindowSpace(const unsigned int renderSpaceWidth, const unsigned int renderSpaceHeight) {
+unsigned long* makeWindowSpace(const unsigned int renderSpaceWidth, const unsigned int renderSpaceHeight) {
     unsigned int* space = prepareWindowSpace(renderSpaceWidth, renderSpaceHeight);
-    unsigned int renderSize = space[0] * space[1]; 
+    unsigned long renderSize = space[0] * space[1]; 
     delete [] space;
     //1st element - id
-    //2nd element - charY
-    //3rd element - charX
+    //2nd element - charX
+    //3rd element - charY
     //4th element - RedValue
     //5th element - GreenValue
     //6th element - BlueValue
-    unsigned int* returnArr = new unsigned int[renderSize * 6];
-    for (unsigned int i = 0; i < renderSize; i += 6) {
+    unsigned long* returnArr = new unsigned long[renderSize * 6];
+    for (unsigned long i = 0; i < renderSize * 6; i += 6) {
         returnArr[i] = 0;
         returnArr[i + 1] = 0;
         returnArr[i + 2] = 1;
@@ -53,8 +53,7 @@ unsigned int* makeWindowSpace(const unsigned int renderSpaceWidth, const unsigne
 
 
 void renderWindow() {
-    unsigned int windowWidth = 1000, windowHeight = 600, currentCurseX, currentCurseY, currentCurseR, currentCurseG, currentCurseB,
-    charWrapCount, charWrapLine;
+    unsigned int windowWidth = 1000, windowHeight = 600, currentCurseX, currentCurseY, currentCurseR, currentCurseG, currentCurseB;
     
     sf::RenderWindow window(sf::VideoMode(windowWidth, windowHeight), "The game", sf::Style::Default);
     window.setFramerateLimit(30);
@@ -64,45 +63,30 @@ void renderWindow() {
             std::cout << "Failed to load the character sheet";
 
     unsigned int* windowSizeDivd = prepareWindowSpace(windowWidth, windowHeight);
-    
-    unsigned int tileInfoArrSize = windowSizeDivd[0] * windowSizeDivd[1] * 6;
+    unsigned long* windowTileInfo = makeWindowSpace(windowWidth, windowHeight);
+    unsigned long tileInfoArrSize = windowSizeDivd[0] * windowSizeDivd[1] * 6;
     sf::Sprite* displayedCurse = new sf::Sprite[tileInfoArrSize / 6];
     
-    /* unsigned int* windowTileInfo = makeWindowSpace(windowWidth, windowHeight);
-    
-    charWrapCount = 0; charWrapLine = 0;
-    for (unsigned int i = 0; i < tileInfoArrSize / 6; i++) {
-        std::cout << i << std::endl;
-        std::cout << tileInfoArrSize << std::endl;
-        displayedCurse[i/6].setTexture(cursesTexture);
-        currentCurseX = windowTileInfo[i * 6 + 1] * 24;
-        currentCurseY = windowTileInfo[i * 6 + 2] * 24;
+    for (unsigned long i = 0; i < tileInfoArrSize / 6; i++) {
+        std::cout << i << " - " << windowTileInfo[i] << std::endl;
+        currentCurseX = windowTileInfo[i * 6 + 1] * FONT_SIZE;
+        currentCurseY = windowTileInfo[i * 6 + 2] * FONT_SIZE;
         currentCurseR = windowTileInfo[i * 6 + 3];
         currentCurseG = windowTileInfo[i * 6 + 4];
         currentCurseB = windowTileInfo[i * 6 + 5];
-        displayedCurse[i/6].setTextureRect(sf::IntRect(currentCurseX, currentCurseY, 24, 24));
-        displayedCurse[i/6].setColor(sf::Color(currentCurseR, currentCurseG, currentCurseB));
-        
-        charWrapCount++;
-        if (charWrapCount >= windowSizeDivd[0]) {
-            charWrapLine++;
-            std::cout << charWrapCount << std::endl;
+        displayedCurse[i].setTexture(cursesTexture);
+        displayedCurse[i].setTextureRect(sf::IntRect(currentCurseX, currentCurseY, FONT_SIZE, FONT_SIZE));
+        displayedCurse[i].setColor(sf::Color(currentCurseR, currentCurseG, currentCurseB));
         }
-        
-        displayedCurse[i].setPosition(charWrapCount * 24, charWrapLine * 24);
-    }
-    */
-    /*sf::Font font;
-        if (!font.loadFromFile("./data/fonts/chars.ttf"))
-                std::cout << "Failed to load the character sheet";
-    sf::Text text;
-        text.setFont(font);
-        text.setCharacterSize(10);
-        text.setFillColor(sf::Color::Red);
     
-    sf::Sprite sprite;
-    sprite.setTexture(texture);
-    */
+    for (unsigned int y = 0; y < windowSizeDivd[1]; y++) {
+        for (unsigned int x = 0; x < windowSizeDivd[0]; x++) {
+            displayedCurse[y * windowSizeDivd[0] + x].setPosition(x * FONT_SIZE, y * FONT_SIZE);
+            //std::cout << y << std::endl;
+            //std::cout << "DEBUG -- no. " << y * windowSizeDivd[0] + x << " pos (" << x * FONT_SIZE << ", " << y * FONT_SIZE << ")" << std::endl;
+        }
+    }
+
     while (window.isOpen()) {
         // check all the window's events that were triggered since the last iteration of the loop
         sf::Event event;
@@ -119,14 +103,6 @@ void renderWindow() {
 
             
             window.clear();
-            /*window.draw(sprite);
-            for (int i = 0; i < 7; i++) {
-                for (int j = 0; j < 24; j++) {
-                    text.setString(std::to_string(j));
-                    text.setPosition(j * 24, i * 24);
-                    window.draw(text);   
-                }
-            }*/
             for(unsigned int i = 0; i < tileInfoArrSize / 6; i++) {
                 window.draw(displayedCurse[i]);
             }
@@ -140,6 +116,6 @@ void renderWindow() {
     }
 delete [] windowSizeDivd; 
 delete [] displayedCurse;  
-//delete [] windowTileInfo;  
+delete [] windowTileInfo;  
 }
     

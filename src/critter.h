@@ -4,7 +4,8 @@
 #include "translator.h"
 
 class Critter {
-    int* displayData;
+    public:
+    int* displayData; 
     unsigned int x, y;
     int hitPoints;
     Critter(std::string tileFile,unsigned int x, unsigned int y, int hitPoints);

@@ -10,3 +10,7 @@ class Controllable : public Critter{
 class PlayerCharacter : public Controllable {
     public:
     }
+    
+class CombatManager {
+    private:
+    }

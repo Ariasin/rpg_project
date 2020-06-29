@@ -4,6 +4,7 @@
 #include <iostream>
 #include <array>
 
+#define FONT_SIZE 24
 /**
  * @brief Divides the window into empty spaces which are to be filled with curses
  * @param current windowWidth 
@@ -17,7 +18,7 @@ unsigned int* prepareWindowSpace(const unsigned int windowWidth, const unsigned 
  * @param renderSpaceHeight - the height of the playing space
  * @return massive array with the display info for every block 
  */
-unsigned int* makeWindowSpace(const unsigned int renderSpaceWidth, const unsigned int renderSpaceHeight);
+unsigned long* makeWindowSpace(const unsigned int renderSpaceWidth, const unsigned int renderSpaceHeight);
 
 /**
  * @brief renders the window

@@ -57,7 +57,7 @@ int* readTileFile(std::string file) {
     int* valueArr = new int[arrSize];
     for (int i = 0; i < arrSize; i++)
         valueArr[i] = 0;
-        
+    
     std::ifstream readFile (file);
   if (readFile.is_open())
   {
