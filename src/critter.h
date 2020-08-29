@@ -7,7 +7,7 @@ class Critter {
     public:
     int* displayData; 
     unsigned int x, y;
-    int hitPoints;
+    int hitpoints;
     Critter(std::string tileFile,unsigned int x, unsigned int y, int hitPoints);
     /**
      * @brief moves the critter by
@@ -20,7 +20,7 @@ class Critter {
      * @brief the critter gets hurt for a specified damage amount
      * @param dmgAmount - how many hp points the critter loses
      */
-    void getHurt(int dmgAmount);    
+    void manageHealth(int dmgAmount);    
     /**
      * @brief determines the thinking mode of the critter(AI) 
      * @param thinkmode - check defines in the cpp file for critter thinkmodes

@@ -4,12 +4,12 @@
         displayData = readTileFile(tileFile);
         this->x = x;
         this->y = y;
-        this->hitPoints = hitPoints;
+        this->hitpoints = hitpoints;
         }
         
     void Critter::move(int movex, int movey) {}    
         
-    void Critter::getHurt(int dmgAmount) {}    
+    void Critter::manageHealth(int dmgAmount) {}    
     
     short Critter::think(short thinkMode) {
         return 0;
