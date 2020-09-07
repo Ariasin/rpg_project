@@ -6,21 +6,21 @@
 
 #IncludeRegexTransform: 
 
-/home/ariasin/rpg_project/src/critter.cpp
+/home/ariasin/WorkJuice/rpg_project_source_code/src/critter.cpp
 critter.h
-/home/ariasin/rpg_project/src/critter.h
+/home/ariasin/WorkJuice/rpg_project_source_code/src/critter.h
 
-/home/ariasin/rpg_project/src/critter.h
+/home/ariasin/WorkJuice/rpg_project_source_code/src/critter.h
 display.h
-/home/ariasin/rpg_project/src/display.h
+/home/ariasin/WorkJuice/rpg_project_source_code/src/display.h
 translator.h
-/home/ariasin/rpg_project/src/translator.h
+/home/ariasin/WorkJuice/rpg_project_source_code/src/translator.h
 
-/home/ariasin/rpg_project/src/directory_reader.cpp
+/home/ariasin/WorkJuice/rpg_project_source_code/src/directory_reader.cpp
 directory_reader.h
-/home/ariasin/rpg_project/src/directory_reader.h
+/home/ariasin/WorkJuice/rpg_project_source_code/src/directory_reader.h
 
-/home/ariasin/rpg_project/src/directory_reader.h
+/home/ariasin/WorkJuice/rpg_project_source_code/src/directory_reader.h
 string
 -
 iostream
@@ -28,7 +28,7 @@ iostream
 dirent.h
 -
 
-/home/ariasin/rpg_project/src/display.h
+/home/ariasin/WorkJuice/rpg_project_source_code/src/display.h
 SFML/Graphics.hpp
 -
 string
@@ -38,11 +38,11 @@ iostream
 array
 -
 
-/home/ariasin/rpg_project/src/input.cpp
+/home/ariasin/WorkJuice/rpg_project_source_code/src/input.cpp
 input.h
-/home/ariasin/rpg_project/src/input.h
+/home/ariasin/WorkJuice/rpg_project_source_code/src/input.h
 
-/home/ariasin/rpg_project/src/input.h
+/home/ariasin/WorkJuice/rpg_project_source_code/src/input.h
 unistd.h
 -
 termios.h
@@ -50,27 +50,27 @@ termios.h
 stdio.h
 -
 
-/home/ariasin/rpg_project/src/main.cpp
+/home/ariasin/WorkJuice/rpg_project_source_code/src/main.cpp
 display.h
-/home/ariasin/rpg_project/src/display.h
+/home/ariasin/WorkJuice/rpg_project_source_code/src/display.h
 translator.h
-/home/ariasin/rpg_project/src/translator.h
+/home/ariasin/WorkJuice/rpg_project_source_code/src/translator.h
 directory_reader.h
-/home/ariasin/rpg_project/src/directory_reader.h
+/home/ariasin/WorkJuice/rpg_project_source_code/src/directory_reader.h
 
-/home/ariasin/rpg_project/src/render_window.cpp
+/home/ariasin/WorkJuice/rpg_project_source_code/src/render_window.cpp
 display.h
-/home/ariasin/rpg_project/src/display.h
+/home/ariasin/WorkJuice/rpg_project_source_code/src/display.h
 input.h
-/home/ariasin/rpg_project/src/input.h
+/home/ariasin/WorkJuice/rpg_project_source_code/src/input.h
 
-/home/ariasin/rpg_project/src/roach.cpp
+/home/ariasin/WorkJuice/rpg_project_source_code/src/roach.cpp
 
-/home/ariasin/rpg_project/src/translator.cpp
+/home/ariasin/WorkJuice/rpg_project_source_code/src/translator.cpp
 translator.h
-/home/ariasin/rpg_project/src/translator.h
+/home/ariasin/WorkJuice/rpg_project_source_code/src/translator.h
 
-/home/ariasin/rpg_project/src/translator.h
+/home/ariasin/WorkJuice/rpg_project_source_code/src/translator.h
 iostream
 -
 fstream
@@ -78,15 +78,15 @@ fstream
 string
 -
 
-/home/ariasin/rpg_project/src/world_builder.cpp
+/home/ariasin/WorkJuice/rpg_project_source_code/src/world_builder.cpp
 world_builder.h
-/home/ariasin/rpg_project/src/world_builder.h
+/home/ariasin/WorkJuice/rpg_project_source_code/src/world_builder.h
 
-/home/ariasin/rpg_project/src/world_builder.h
+/home/ariasin/WorkJuice/rpg_project_source_code/src/world_builder.h
 translator.h
-/home/ariasin/rpg_project/src/translator.h
+/home/ariasin/WorkJuice/rpg_project_source_code/src/translator.h
 display.h
-/home/ariasin/rpg_project/src/display.h
+/home/ariasin/WorkJuice/rpg_project_source_code/src/display.h
 input.h
-/home/ariasin/rpg_project/src/input.h
+/home/ariasin/WorkJuice/rpg_project_source_code/src/input.h
 

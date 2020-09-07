@@ -1,3 +1,3 @@
-/home/ariasin/rpg_project/CMakeFiles/rebuild_cache.dir
-/home/ariasin/rpg_project/CMakeFiles/rpg_project.dir
-/home/ariasin/rpg_project/CMakeFiles/edit_cache.dir
+/home/ariasin/WorkJuice/rpg_project_source_code/CMakeFiles/rebuild_cache.dir
+/home/ariasin/WorkJuice/rpg_project_source_code/CMakeFiles/rpg_project.dir
+/home/ariasin/WorkJuice/rpg_project_source_code/CMakeFiles/edit_cache.dir

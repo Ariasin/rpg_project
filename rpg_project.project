@@ -1,63 +1,63 @@
 <?xml version="1.0" encoding="utf-8"?>
-<CodeLite_Project Name="rpg_project" InternalType="" Version="10.0.0">
-  <VirtualDirectory Name="src">
-    <VirtualDirectory Name="src">
-      <File Name="src/critter.cpp"/>
-      <File Name="src/directory_reader.cpp"/>
-      <File Name="src/input.cpp"/>
-      <File Name="src/main.cpp"/>
-      <File Name="src/render_window.cpp"/>
-      <File Name="src/roach.cpp"/>
-      <File Name="src/translator.cpp"/>
-      <File Name="src/world_builder.cpp"/>
-    </VirtualDirectory>
-  </VirtualDirectory>
-  <VirtualDirectory Name="include">
-    <VirtualDirectory Name="src">
-      <File Name="src/critter.h"/>
-      <File Name="src/directory_reader.h"/>
-      <File Name="src/display.h"/>
-      <File Name="src/input.h"/>
-      <File Name="src/translator.h"/>
-      <File Name="src/world_builder.h"/>
-      <File Name="src/player.h"/>
-    </VirtualDirectory>
-  </VirtualDirectory>
-  <Settings Type="">
-    <Configuration Name="Debug" CompilerType="gnu g++" DebuggerType="GNU gdb debugger" Type="" BuildCmpWithGlobalSettings="append" BuildLnkWithGlobalSettings="append" BuildResWithGlobalSettings="append">
-      <Compiler Options="-g" Required="yes" PreCompiledHeader="">
-        <IncludePath Value="."/>
-      </Compiler>
-      <Linker Options="" Required="yes"/>
-      <ResourceCompiler Options="" Required="no"/>
-      <General OutputFile="$(IntermediateDirectory)/$(ProjectName)" IntermediateDirectory="./" Command="./$(ProjectName)" CommandArguments="" WorkingDirectory="$(IntermediateDirectory)" PauseExecWhenProcTerminates="yes"/>
-      <Debugger IsRemote="no" RemoteHostName="" RemoteHostPort="" DebuggerPath="">
-        <PostConnectCommands/>
-        <StartupCommands/>
-      </Debugger>
-      <PreBuild/>
-      <PostBuild/>
-      <CustomBuild Enabled="yes">
-        <RebuildCommand>/usr/bin/make -j 16 clean &amp;&amp; /usr/bin/make -j 16</RebuildCommand>
-        <CleanCommand>/usr/bin/make -j 16 clean</CleanCommand>
-        <BuildCommand>/usr/bin/make -j 16</BuildCommand>
-        <SingleFileCommand>/usr/bin/make -f$(ProjectPath)/Makefile $(CurrentFileName).cpp.o</SingleFileCommand>
-        <PreprocessFileCommand/>
-        <WorkingDirectory>$(WorkspacePath)</WorkingDirectory>
-      </CustomBuild>
-      <AdditionalRules>
-        <CustomPostBuild/>
-        <CustomPreBuild/>
-      </AdditionalRules>
-    </Configuration>
-    <GlobalSettings>
-      <Compiler Options="">
-        <IncludePath Value="."/>
-      </Compiler>
-      <Linker Options="">
-        <LibraryPath Value="."/>
-      </Linker>
-      <ResourceCompiler Options=""/>
-    </GlobalSettings>
-  </Settings>
+<CodeLite_Project Name="rpg_project" InternalType="">
+	<VirtualDirectory Name="src">
+		<VirtualDirectory Name="src">
+			<File Name="src/critter.cpp"/>
+			<File Name="src/directory_reader.cpp"/>
+			<File Name="src/input.cpp"/>
+			<File Name="src/main.cpp"/>
+			<File Name="src/render_window.cpp"/>
+			<File Name="src/roach.cpp"/>
+			<File Name="src/translator.cpp"/>
+			<File Name="src/world_builder.cpp"/>
+		</VirtualDirectory>
+	</VirtualDirectory>
+	<VirtualDirectory Name="include">
+		<VirtualDirectory Name="src">
+			<File Name="src/critter.h"/>
+			<File Name="src/directory_reader.h"/>
+			<File Name="src/display.h"/>
+			<File Name="src/input.h"/>
+			<File Name="src/player.h"/>
+			<File Name="src/translator.h"/>
+			<File Name="src/world_builder.h"/>
+		</VirtualDirectory>
+	</VirtualDirectory>
+	<Settings Type="">
+		<Configuration Name="Debug" CompilerType="gnu g++" DebuggerType="GNU gdb debugger" Type="" BuildCmpWithGlobalSettings="append" BuildLnkWithGlobalSettings="append" BuildResWithGlobalSettings="append">
+			<Compiler Options="-g" Required="yes" PreCompiledHeader="">
+				<IncludePath Value="."/>
+			</Compiler>
+			<Linker Options="" Required="yes"/>
+			<ResourceCompiler Options="" Required="no"/>
+			<General OutputFile="$(IntermediateDirectory)/$(ProjectName)" IntermediateDirectory="./" Command="./$(ProjectName)" CommandArguments="" WorkingDirectory="$(IntermediateDirectory)" PauseExecWhenProcTerminates="yes"/>
+			<Debugger IsRemote="no" RemoteHostName="" RemoteHostPort="" DebuggerPath="">
+				<PostConnectCommands/>
+				<StartupCommands/>
+			</Debugger>
+			<PreBuild/>
+			<PostBuild/>
+			<CustomBuild Enabled="yes">
+				<RebuildCommand>/usr/bin/make -j 4 clean &amp;&amp; /usr/bin/make -j 4</RebuildCommand>
+				<CleanCommand>/usr/bin/make -j 4 clean</CleanCommand>
+				<BuildCommand>/usr/bin/make -j 4</BuildCommand>
+				<SingleFileCommand>/usr/bin/make -f$(ProjectPath)/Makefile $(CurrentFileName).cpp.o</SingleFileCommand>
+				<PreprocessFileCommand/>
+				<WorkingDirectory>$(WorkspacePath)</WorkingDirectory>
+			</CustomBuild>
+			<AdditionalRules>
+				<CustomPostBuild/>
+				<CustomPreBuild/>
+			</AdditionalRules>
+		</Configuration>
+		<GlobalSettings>
+			<Compiler Options="">
+				<IncludePath Value="."/>
+			</Compiler>
+			<Linker Options="">
+				<LibraryPath Value="."/>
+			</Linker>
+			<ResourceCompiler Options=""/>
+		</GlobalSettings>
+	</Settings>
 </CodeLite_Project>

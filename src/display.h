@@ -18,7 +18,7 @@ unsigned int* prepareWindowSpace(const unsigned int windowWidth, const unsigned 
  * @param renderSpaceHeight - the height of the playing space
  * @return massive array with the display info for every block 
  */
-unsigned long* makeWindowSpace(const unsigned int renderSpaceWidth, const unsigned int renderSpaceHeight);
+unsigned long** makeWindowSpace(const unsigned int renderSpaceWidth, const unsigned int renderSpaceHeight);
 
 /**
  * @brief renders the window
