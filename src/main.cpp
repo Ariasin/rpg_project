@@ -6,14 +6,12 @@
 int main()
 { 
     std::string* test = getDirFiles("data/critters"); //remember that for some reason the last element is empty
+
+    int testNum = getDirFilesNum("/home/ariasin/WorkJuice/rpg_project_source_code/data/critters") - 2;
     
-    int testNum = getDirFilesNum("data/critters") - 1;
-    std::cout << testNum << std::endl;
-    for (int i = 0; i < testNum; i++)
-        std::cout << "DEBUG -- " << test[i] << std::endl;
-    //renderWindow();
-    
-    openTileBuilder();
+    std::cout << "DEBUG -- " << test[testNum] << std::endl;
+    //test
+    renderWindow();
     
     delete [] test;
     return 0;
