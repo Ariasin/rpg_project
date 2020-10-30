@@ -300,6 +300,6 @@ void Slider::setValue(sf::Vector2i mousePos) {
     relativeX = mousePos.x - this->x;
     relativeY = mousePos.y - this->y;
     
-    if (relativeX >= 0 && relativeX <= 255 && relativeY <= 6 && relativeY >= -6)
+    if ((relativeX >= 0) && (relativeX <= 255) && (relativeY <= 6) && (relativeY >= -6)) 
         this->value = relativeX;
 }

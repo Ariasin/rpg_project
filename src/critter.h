@@ -8,7 +8,7 @@ class Critter {
     int* displayData; 
     unsigned int x, y;
     int hitpoints;
-    Critter(std::string tileFile,unsigned int x, unsigned int y, int hitPoints);
+    Critter(std::string tileFile, unsigned int x, unsigned int y, int hitPoints);
     /**
      * @brief moves the critter by
      * @param movex

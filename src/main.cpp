@@ -1,16 +1,19 @@
 #include "display.h"
 #include "translator.h"
 #include "directory_reader.h"
+#include "world_builder.h"
 
 int main()
 { 
-    std::string* test = getDirFiles("/home/ariasin/WorkJuice/rpg_project_source_code/data/critters"); //remember that for some reason the last element is empty
+    std::string* test = getDirFiles("data/critters"); //remember that for some reason the last element is empty
     
-    int testNum = getDirFilesNum("/home/ariasin/WorkJuice/rpg_project_source_code/data/critters") - 2;
+    int testNum = getDirFilesNum("data/critters") - 1;
+    std::cout << testNum << std::endl;
+    for (int i = 0; i < testNum; i++)
+        std::cout << "DEBUG -- " << test[i] << std::endl;
+    //renderWindow();
     
-    std::cout << "DEBUG -- " << test[testNum] << std::endl;
-    
-    renderWindow();
+    openTileBuilder();
     
     delete [] test;
     return 0;

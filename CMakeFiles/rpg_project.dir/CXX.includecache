@@ -57,6 +57,8 @@ translator.h
 /home/ariasin/WorkJuice/rpg_project_source_code/src/translator.h
 directory_reader.h
 /home/ariasin/WorkJuice/rpg_project_source_code/src/directory_reader.h
+world_builder.h
+/home/ariasin/WorkJuice/rpg_project_source_code/src/world_builder.h
 
 /home/ariasin/WorkJuice/rpg_project_source_code/src/render_window.cpp
 display.h

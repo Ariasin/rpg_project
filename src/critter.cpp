@@ -7,9 +7,14 @@
         this->hitpoints = hitpoints;
         }
         
-    void Critter::move(int movex, int movey) {}    
+    void Critter::move(int movex, int movey) {
+        this->x += movex;
+        this->y += movey;
+        }    
         
-    void Critter::manageHealth(int dmgAmount) {}    
+    void Critter::manageHealth(int dmgAmount) {
+        this->hitpoints += dmgAmount;
+        }    
     
     short Critter::think(short thinkMode) {
         return 0;

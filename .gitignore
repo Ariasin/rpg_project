@@ -1,6 +1,6 @@
-./.codelite
-./CMakeCache.txt
-./CMakeFiles
-./cmake_install.cmake
-./rpg_project.project
-./rpg_project.workspace
+.codelite/*
+CMakeCache.txt
+CMakeFiles/*
+cmake_install.cmake
+rpg_project.project
+rpg_project.workspace

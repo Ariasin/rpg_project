@@ -14,8 +14,10 @@ CMakeFiles/rpg_project.dir/src/input.cpp.o: src/input.h
 
 CMakeFiles/rpg_project.dir/src/main.cpp.o: src/directory_reader.h
 CMakeFiles/rpg_project.dir/src/main.cpp.o: src/display.h
+CMakeFiles/rpg_project.dir/src/main.cpp.o: src/input.h
 CMakeFiles/rpg_project.dir/src/main.cpp.o: src/main.cpp
 CMakeFiles/rpg_project.dir/src/main.cpp.o: src/translator.h
+CMakeFiles/rpg_project.dir/src/main.cpp.o: src/world_builder.h
 
 CMakeFiles/rpg_project.dir/src/render_window.cpp.o: src/display.h
 CMakeFiles/rpg_project.dir/src/render_window.cpp.o: src/input.h

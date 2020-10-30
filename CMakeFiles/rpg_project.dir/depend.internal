@@ -15,8 +15,10 @@ CMakeFiles/rpg_project.dir/src/input.cpp.o
 CMakeFiles/rpg_project.dir/src/main.cpp.o
  /home/ariasin/WorkJuice/rpg_project_source_code/src/directory_reader.h
  /home/ariasin/WorkJuice/rpg_project_source_code/src/display.h
+ /home/ariasin/WorkJuice/rpg_project_source_code/src/input.h
  /home/ariasin/WorkJuice/rpg_project_source_code/src/main.cpp
  /home/ariasin/WorkJuice/rpg_project_source_code/src/translator.h
+ /home/ariasin/WorkJuice/rpg_project_source_code/src/world_builder.h
 CMakeFiles/rpg_project.dir/src/render_window.cpp.o
  /home/ariasin/WorkJuice/rpg_project_source_code/src/display.h
  /home/ariasin/WorkJuice/rpg_project_source_code/src/input.h

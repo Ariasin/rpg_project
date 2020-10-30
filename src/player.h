@@ -2,8 +2,11 @@
 #include "critter.h"
 #include "translator.h"
 
-
-class Controllable : public Critter{
+/**
+ * @class Controllable
+ * @brief a selectable object that can be contolled in combat
+ */
+class Controllable : public Critter {
     public: 
     }
 
