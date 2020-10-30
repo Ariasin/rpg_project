@@ -1,0 +1,6 @@
+CMakeFiles/
+.codelite/
+CMakeCache.txt
+rpg_project.project
+rpg_project.workspace
+cmake_install.cmake
