@@ -57,7 +57,7 @@ unsigned long** makeWindowSpace(const unsigned int renderSpaceWidth, const unsig
     delete [] space;
     return returnArr;
 }
-
+//test
 
 void renderWindow() {
     unsigned int windowWidth = 1000, windowHeight = 600, currentCurseX, currentCurseY, currentCurseR, currentCurseG, currentCurseB;
